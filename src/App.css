@@ -1,38 +1,120 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f5f6; 
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background-color: #ececec;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.app .mainHeading h1,
+.app .subHeading h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app h1,
+.app h2 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app .input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 0.8em;
+  width: 20em;
+  height: 2em;
+  background-color: #f0f0f0;;
+  border-radius: 6px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.app .input input {
+  width: 100%;
+  height: 1.6em;
+  border: none; 
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: #888;
+  margin-right: 5px;
+}
+.app .todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.app .todos .todo {
+  margin-top: 0.8em;
+  width: 20em;
+  height: 2em;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.app .todos .todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app .todos .todo .left p {
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+}
+.footer{
+  margin-top: 20%;
+}
+
+.error {
+  color: red;
+  text-align: center; 
+  margin-top: 0.5em; 
+}
+
+.jobdone {
+  margin-top: 50px;
+}
+
+.jobdone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+  color: #333;
+}
+
+.jobdone h4,
+.jobdone h5 {
+  margin-bottom: 0.5em;
+}
+
+.jobdone h6 {
+  margin: 0.2em 0;
 }

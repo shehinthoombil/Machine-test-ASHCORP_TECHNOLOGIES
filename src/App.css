@@ -20,49 +20,42 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.app .mainHeading h1,
-.app .subHeading h2 {
+.app h1 {
   text-align: center;
-}
-
-.app h1,
-.app h2 {
   color: #333;
 }
 
-.app .input {
+.input {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0.8em;
   width: 20em;
   height: 2em;
-  background-color: #f0f0f0;;
+  background-color: #f0f0f0;
   border-radius: 6px;
   padding: 5px;
 }
 
-.app .input input {
+.input input {
   width: 100%;
   height: 1.6em;
-  border: none; 
+  border: none;
   outline: none;
 }
 
-.app i {
-  cursor: pointer;
-  font-size: larger;
-  font-weight: 900;
-  color: #888;
-  margin-right: 5px;
+.input .add-button {
+  margin-left: 5px;
 }
-.app .todos {
+
+.todos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.app .todos .todo {
+
+.todos .todo {
   margin-top: 0.8em;
   width: 20em;
   height: 2em;
@@ -74,20 +67,22 @@ body {
   padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-.app .todos .todo .left {
+
+.todos .todo .left {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.app .todos .todo .left p {
+.todos .todo .left p {
   margin-left: 3px;
   font-size: medium;
   font-weight: 700;
   font-style: normal;
   color: #333;
 }
-.footer{
+
+.footer {
   margin-top: 20%;
 }
 
